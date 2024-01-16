@@ -1,4 +1,4 @@
-* {
+* body {
     margin: 0;
 }
 
@@ -6,60 +6,74 @@
 * {
     font-size: 'Mulish', sans-serif;
 }
+
 /* variable */
-:root{
+:root {
     --primary-color: #131318;
     --secondary-color: #fff;
     --p-color: #5A5A5D;
     --special-color: #FF5400;
 }
+
 /* Header section */
 
-header{
-    margin:80px 60px;
+header {
+    margin: 80px 60px;
 }
+
 /* Nav Section */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
     align-items: center;
 }
-.nav-menu ul{
+
+.nav-menu ul {
     display: flex;
-    
+
 }
-.nav-menu li{
+
+.nav-menu li {
     list-style: none;
     margin-left: 40px;
     font-size: 18px;
     font-weight: 400;
-   
+
 }
-.nav-menu li a{
+
+.nav-menu li a {
     text-decoration: none;
     color: rgba(66, 66, 71, 1);
-    
+
 }
-#home a{
+
+/* #checkbox{
+    display: none;
+} */
+#home a {
     color: var(--special-color);
     font-weight: 700;
 }
-.nav-content{
+
+.nav-content {
     display: flex;
     align-items: center;
 }
-.nav-content h1{
+
+.nav-content h1 {
     margin-left: 15px;
     font-size: 36px;
     font-weight: 800;
     color: var(--primary-color);
 }
-.nav-content h1 span{
+
+.nav-content h1 span {
     color: var(--special-color);
 }
+
 /* Header banner section */
-.header-banner{
+.header-banner {
     background-image: url(../images/Group.png);
     width: 100%;
     height: 600px;
@@ -68,61 +82,189 @@ nav{
     background-size: cover;
     border-radius: 16px;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    overflow: hidden;
+
 }
-.banner-content{
+
+.banner-content {
     text-align: center;
     margin: 0 auto;
-    padding: 210px 497px 238px;
+    padding: 119px 475px 91px;
+    background-color: #00000030;
 }
-.content h1{
+
+.content h1 {
     font-size: 64px;
     font-weight: 800;
     color: var(--secondary-color);
 }
-.content p{
+
+.content p {
     font-size: 16px;
     font-weight: 400;
     color: var(--secondary-color);
     padding: 24px 0 48px;
 }
 
-.banner-button{
-    background-color:  rgba(255, 255, 255, 0.30);
+.banner-button {
+    background-color: rgba(255, 255, 255, 0.30);
     border-radius: 8px;
-    padding: 16px;
+    padding: 16px 30px;
     display: inline-flex;
     gap: 24px;
-  
+
 }
+
 .banner-button button {
     font-size: 16px;
     font-weight: 400;
-    padding: 15px 50px;
+    padding: 18px 15px;
     border: none;
     border-radius: 8px;
-    
+    color: rgba(19, 19, 24, 0.50);
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.banner-button button a{
-    text-decoration: none;
-    color:  rgba(19, 19, 24, 0.50);
+.banner-button .btn-1 {
+    background-color: var(--special-color);
+    color: var(--secondary-color);
 }
-    
 
+/* main */
+main {
+    margin: 80px 60px;
+}
 
+/* popular tours section  */
 
+.popular-tours-container {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    width: 100%;
 
+}
 
+.popular-tours-content {
+    width: 100%;
+}
 
+.popular-tours-content h3 {
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.popular-tours-content p,
+.popular-tours-content li {
+    font-size: 16px;
+    color: var(--p-color);
+    font-weight: 400;
+    padding: 10px 0;
+    line-height: 2;
+}
+
+.popular-tours-content button {
+    background-color: var(--special-color);
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin-top: 98px;
+}
+
+.popular-tours-img {
+    width: 100%;
+
+}
+
+.popular-tours-img img {
+    width: 100%;
+}
+/* Destination section */
+.destination-content{
+    text-align: center;
+    margin: 80px 0;
+}
+.destination-content h3{
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: 800;
+    /* line-height: 1.5; */
+}
+.destination-content p{
+    font-size: 16px;
+    color: var(--p-color);
+    font-weight: 400;
+    /* line-height: ; */
+}
 
 
 
 
 /* Responsive */
-@media screen and (max-width:600px;){
-    
+@media screen and (max-width: 600px) {
 
+    /* header section */
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin-left: 12px;
+    }
+
+    .header-banner {
+        height: 750px;
+    }
+
+    .banner-content {
+        padding: 110px 25px 107px;
+    }
+
+    .content h1 {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .banner-button {
+        flex-direction: column;
+
+    }
+
+    .banner-button button {
+        padding: 20px 16px;
+        width: 370px;
+    }
+
+    .banner-button .btn-1 {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* popular tours */
+    .popular-tours-container {
+        flex-direction: column;
+    }
+
+    .popular-tours-content button {
+        margin-top: 0;
+    }
+
+    .popular-tours-container {
+        gap: 30px;
+    }
+
+    /* Destination section */
 
 
 }
