@@ -199,14 +199,14 @@ main {
     font-size: 40px;
     color: var(--primary-color);
     font-weight: 800;
-    /* line-height: 1.5; */
+
 }
 
 .destination-content p {
     font-size: 16px;
     color: var(--p-color);
     font-weight: 400;
-    /* line-height: ; */
+
 }
 
 .row {
@@ -771,10 +771,8 @@ hr {
         width: 80%;
     }
 
-    /* simple perfect place */
-
-
     /* Newsletter */
+    
     .newsletter {
         flex-direction: column;
         margin: 30px 0;
@@ -810,7 +808,6 @@ hr {
         height: 60px;
         left: 23em;
         top: 476em;
-
     }
 
     .offer p strong {
